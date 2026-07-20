@@ -59,17 +59,17 @@ getgenv().DNS = {
             ["Hitchance"] = 100,
             ["Parts"]     = {"Head","UpperTorso","HumanoidRootPart"},
             ["ClosestPart"] = {
-                ["Enabled"] = false,
+                ["Enabled"] = true,
                 ["Mode"]    = "Cursor",  -- "Cursor" or "ScreenCenter"
             },
             ["ClosestPoint"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Mode"]    = "Advanced",
                 ["Scale"]   = 2.5,
                 ["Density"] = 1,
             },
             ["Prediction"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Mode"]    = "Basic",
                 ["Basic"]   = 0,
                 ["Distance"] = {
@@ -83,7 +83,7 @@ getgenv().DNS = {
                 },
             },
             ["AntiCurve"] = {
-                ["Enabled"]         = true,
+                ["Enabled"]         = false,
                 ["Mode"]            = "3D",
                 ["AngularCurve"]    = 1.6,
                 ["DebugOutput"]     = false,
@@ -100,8 +100,8 @@ getgenv().DNS = {
                 ["FOVOnly"] = true,  -- Only lock onto targets in FOV
             },
             ["Optimizations"] = {
-                ["FrameThrottle"] = 5,  -- 1 = every frame, 2 = every 2 frames
-                ["WallCheckThrottle"] = 5,  -- Wallcheck throttle
+                ["FrameThrottle"] = 3,  -- 1 = every frame, 2 = every 2 frames
+                ["WallCheckThrottle"] = 2,  -- Wallcheck throttle
             },
         },
         ["ClientBullet"] = {
@@ -134,7 +134,7 @@ getgenv().DNS = {
                 ["[Silencer]"]         = {["Radius"]=88},
             },
             ["DistanceConfiguration"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Ranges"]  = {
                     {["Max"]=20,  ["Radius"]=350},
                     {["Max"]=50,  ["Radius"]=320},
@@ -148,19 +148,19 @@ getgenv().DNS = {
         ["WeaponCheck"]   = true,
     },
     ["Camlock"] = {
-        ["Enabled"] = true,
+        ["Enabled"] = false,
         ["Main"] = {
-            ["Enabled"]         = true,
+            ["Enabled"]         = false,
             ["Key"]             = "C",
             ["UnlockKey"]       = "Z",
-            ["SmoothLock"]      = true,
+            ["SmoothLock"]      = false,
             ["Smoothness"]      = 0.00216245,
             ["MouseSmoothness"] = 0,
-            ["Shake"]           = true,
+            ["Shake"]           = false,
             ["ShakeValue"]      = 1,
             ["Parts"]           = {"Head","UpperTorso","HumanoidRootPart"},
             ["FollowMode"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Mode"]    = "Camera",
             },
             ["EasingStyle"] = "Linear",
@@ -171,7 +171,7 @@ getgenv().DNS = {
                 ["Density"] = 2,
             },
             ["Prediction"] = {
-                ["Enabled"] = true,
+                ["Enabled"] = false,
                 ["Mode"]    = "Basic",
                 ["Basic"]   = 0.135,
                 ["Distance"] = {
@@ -194,7 +194,7 @@ getgenv().DNS = {
                 },
             },
             ["CameraMode"] = {
-                ["Enabled"]     = true,
+                ["Enabled"]     = false,
                 ["EasingStyle"] = "Linear",
                 ["Smoothness"]  = 0.01,
                 ["Prediction"]  = {
@@ -224,7 +224,7 @@ getgenv().DNS = {
                 ["Enabled"]    = false,
                 ["Smoothness"] = 1,
                 ["Prediction"] = {
-                    ["Enabled"] = true,
+                    ["Enabled"] = false,
                     ["Basic"]   = 0.12,
                     ["Distance"] = {
                         ["Enabled"] = false,
@@ -249,8 +249,8 @@ getgenv().DNS = {
         },
         ["FOV"] = {
             ["Type"]         = "Circle",
-            ["Enabled"]      = true,
-            ["UseFOV"]       = true,
+            ["Enabled"]      = false,
+            ["UseFOV"]       = false,
             ["ShowFOV"]      = false,
             ["Radius"]       = 90,
             ["Color"]        = Color3.fromRGB(255,68,80),
@@ -288,7 +288,7 @@ getgenv().DNS = {
         ["FirstPersonCheck"] = true,
     },
     ["Tracer"] = {
-        ["Enabled"]      = true,
+        ["Enabled"]      = false,
         ["Color"]        = Color3.fromRGB(255,68,80),
         ["Transparency"] = 1,
     },
@@ -298,13 +298,13 @@ getgenv().DNS = {
         ["Keybind"]       = Enum.KeyCode.V,
     },
     ["Checks"] = {
-        ["Enabled"]             = true,
+        ["Enabled"]             = false,
         ["AntiGroundShots"]     = false,
         ["AntiGroundThreshold"] = 3.5,
         ["Visibility"]          = false,
-        ["Knocked"]             = true,
+        ["Knocked"]             = false,
         ["CrewCheck"]           = false,
-        ["ForceField"]          = true,
+        ["ForceField"]          = false,
         ["Grabbed"]             = false,
     },
     ["Prefire"] = {
