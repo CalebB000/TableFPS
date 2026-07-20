@@ -100,8 +100,8 @@ getgenv().DNS = {
                 ["FOVOnly"] = true,  -- Only lock onto targets in FOV
             },
             ["Optimizations"] = {
-                ["FrameThrottle"] = 3,  -- 1 = every frame, 2 = every 2 frames
-                ["WallCheckThrottle"] = 3,  -- Wallcheck throttle
+                ["FrameThrottle"] = 5,  -- 1 = every frame, 2 = every 2 frames
+                ["WallCheckThrottle"] = 5,  -- Wallcheck throttle
             },
         },
         ["ClientBullet"] = {
