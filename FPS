@@ -350,7 +350,7 @@ getgenv().DNS = {
         ["Enabled"] = true,
         ["BulletSpread"] = {
             ["Enabled"] = true,
-            ["Amount"]  = 0,
+            ["Amount"]  = 52,
         },
     },
     ["ESP"] = {
