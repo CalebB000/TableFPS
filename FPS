@@ -43,7 +43,7 @@ getgenv().DNS = {
         ["FOVMode"]       = "Mouse",
     },
     ["MemorySpoofer"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["Range"] = {
             ["Min"] = 500,
             ["Max"] = 800,
